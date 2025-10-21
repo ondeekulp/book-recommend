@@ -148,7 +148,7 @@ nav.navbar {
 
 /* unopen */
 .accordion-button {
-  background-color: #c5bfab;  /* สีพื้นหลัง */
+  background-color: #d4cfc0;  /* สีพื้นหลัง */
   color: #161613;             /* สีตัวอักษร */
   font-weight: bold;
   border-radius: 0;           /* ✅ ไม่มีมุมมน */
@@ -157,7 +157,7 @@ nav.navbar {
 
 /* open */
 .accordion-button:not(.collapsed) {
-  background-color: #d4cfc0;  /* สีตอนเปิด */
+  background-color: #c7c1ac;  /* สีตอนเปิด */
   color: #161613;
   border-radius: 0;           /* ✅ ไม่มีมุมมนตอนเปิด */
 }
