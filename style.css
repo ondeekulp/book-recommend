@@ -1,0 +1,168 @@
+
+/*div{ 
+  border: 2px solid rgb(105, 167, 201); 
+}*/
+
+
+
+body {
+  background-color: #e8e4d9;
+  margin: 0; /* เคลียร์ margin ของ body เพื่อไม่ให้ขอบขาว */
+}
+
+
+
+nav.navbar {
+  background-color: #c7c1ac !important;
+}
+
+
+
+.book-img {
+  width: 100%;          /* กว้างเต็ม container */
+  max-width: 450px;     /* ไม่เกิน 400px */
+  height: auto;         /* สูงอัตโนมัติ เพื่อรักษาสัดส่วน */
+  padding-left: 0;
+  margin-left: 0;
+  display: block;       /* ลบช่องว่างลอยด้านล่างของ img */
+}
+
+@media (min-width: 992px) {
+  .book-img {
+    margin-left: 80px;
+    padding-left: 100px;
+  }
+}
+
+
+.content-wrapper {
+  position: relative;
+  display: block;
+  padding: 50px 20px;
+  overflow: hidden;
+  background-image: url('images/view_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: fit-content;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    min-height:400px;
+  }
+}
+
+
+
+.content-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px; /* เว้นช่องว่างระหว่างรูปกับข้อความ */
+  flex-wrap: wrap; /* ให้ลดบรรทัดตามขนาดหน้าจอ */
+  position: relative;
+  z-index: 1; /* ซ้อนอยู่เหนือพื้นหลัง */
+}
+
+
+
+
+.quote-text {
+  font-size: clamp(22px, 5vw, 35px);
+  max-width: 600px;
+  width: 90%;
+  color: #3b392e;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto; /* จัดกลาง */
+  flex: 1 1 300px; /* ยืดหยุ่นได้ แต่อย่างน้อย 300px */
+}
+
+.sriracha-head {
+  font-family: 'Sriracha', cursive;
+  font-size: clamp(26px, 6vw, 40px); /* ปรับขนาดฟอนต์ตามหน้าจอ */
+  color: #3b392e;
+  display: inline-block; /* ช่วยให้ขนาดฟอนต์และการจัดวางดีขึ้น */
+}
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 30px; /* หรือมากกว่านี้ได้ เช่น 32px */
+  }
+
+  .sriracha-head {
+    font-size: 36px;
+  }
+}
+
+
+
+.sriracha-text {
+  font-family: 'Sriracha', cursive;
+  font-size: 40px;
+  color: #3b392e;
+}
+
+.intro-text {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .content-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quote-text {
+    margin-top: 20px;
+  }
+}
+
+
+    body {
+      font-family: 'IBM Plex Sans Thai', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #3b392e;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content-text {
+        position: absolute;
+        top: 300px;
+        right: 50px;
+        width: 600px;
+        text-align: center;
+    }
+
+
+
+/* unopen */
+.accordion-button {
+  background-color: #c5bfab;  /* สีพื้นหลัง */
+  color: #161613;             /* สีตัวอักษร */
+  font-weight: bold;
+  border-radius: 0;           /* ✅ ไม่มีมุมมน */
+  transition: background-color 0.3s ease;
+}
+
+/* open */
+.accordion-button:not(.collapsed) {
+  background-color: #d4cfc0;  /* สีตอนเปิด */
+  color: #161613;
+  border-radius: 0;           /* ✅ ไม่มีมุมมนตอนเปิด */
+}
+
+
+
+
+
