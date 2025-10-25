@@ -24,7 +24,9 @@ nav.navbar {
   height: auto;         /* สูงอัตโนมัติ เพื่อรักษาสัดส่วน */
   padding-left: 0;
   margin-left: 0;
+  margin: 0 auto;
   display: block;       /* ลบช่องว่างลอยด้านล่างของ img */
+ 
 }
 
 @media (min-width: 992px) {
@@ -163,6 +165,67 @@ nav.navbar {
 }
 
 
+
+
+
+
+
+.book-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 300px; /* ลดความกว้างสูงสุดจาก 400px → 300px */
+  margin: 20px auto; /* ลด margin บน/ล่าง */
+  overflow: hidden;
+  transition: transform 0.2s;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 14px; /* ลดฟอนต์ลงเล็กน้อยให้สัดส่วนกลมกลืนกับกล่องเล็ก */
+}
+
+.book-card-img {
+  width: 60%;       /* ปรับขนาดรูปให้สัมพันธ์กับกล่องเล็ก */
+  max-width: 150px; /* ลดขนาดสูงสุดของรูป */
+  display: block;
+  margin: 20px auto 0;
+}
+
+.book-card-content {
+  padding: 15px; /* ลด padding รอบข้อความ */
+  text-align: center;
+}
+
+.book-card-title {
+  font-weight: bold;
+  font-size: 18px; /* ลดขนาดฟอนต์หัวข้อ */
+  color: #3b392e;
+  margin: 0 0 5px 0;
+  line-height: 1.2;
+}
+
+.book-card-description {
+  margin: 5px;
+  line-height: 1.4;
+  color: #3b392e;
+  font-size: 14px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-card {
+    margin: 20px;
+  }
+
+  .book-card-title {
+    font-size: 15px;
+  }
+}
+
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 
 
 
